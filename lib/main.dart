@@ -14,7 +14,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image.asset('assets/images/space1.jpg'),
+        child: IconButton(
+          onPressed: () {
+            print("I'm pressed!");
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
